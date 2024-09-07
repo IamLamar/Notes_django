@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Blog</title>
+    <style>
+        li{
+            font-size: 15px;
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Posts</h1>
+<ul>
+{% for post in posts%}
+<li>{{post.title}}</li>
+<li>{{post.create_at}}</li>
+<li>{{post.content}}</li>
+{% endfor %}</ul>
+</ul>
+</body>
+</html>
